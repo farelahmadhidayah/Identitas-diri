@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Profesional Saya</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        /* Bagian Profil */
+        .profile-header { text-align: center; }
+        .profile-pic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            object-fit: cover;
+            background: #eee;
+        }
+        h2 { margin: 15px 0 5px; color: var(--primary); }
+        .tagline { color: var(--accent); font-weight: 600; font-size: 0.9em; margin-bottom: 20px; }
+
+        /* Identitas & Prestasi */
+        h3 { 
+            font-size: 1.1em; 
+            border-bottom: 2px solid var(--bg); 
+            padding-bottom: 10px; 
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        .info-grid {
+            display: grid;
+            gap: 10px;
+            text-align: left;
+            font-size: 0.95em;
+        }
+        .info-item { display: flex; justify-content: space-between; }
+        .info-label { font-weight: bold; color: #7f8c8d; }
+
+        .achievement-list {
+            padding-left: 20px;
+            margin: 0;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        /* Tombol Medsos */
+        .social-links { display: grid; gap: 10px; margin-top: 10px; }
+        .btn {
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 600;
+            color: white;
+            transition: 0.3s;
+            font-size: 0.9em;
+        }
+        .fb { background: #1877F2; }
+        .tk { background: #000; }
+        .wa { background: #25D366; }
+        .btn:hover { filter: brightness(1.2); }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="card profile-header">
+            <img src="1776295946550.png" class="profile-pic">
+            <h2>Farel ahmad hidayah</h2>
+            <div class="tagline">Graphic Design Enthusiast | Student</div>
+            <p>Ingin meraih cita-cita melalui prodi tecnologi informatika.dengan ingin menciptakan sesuatu yang baru,dan tidak berpaling dari islam.</p>
+        </div>
+
+        <div class="card">
+            <h3>Identitas Diri</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Status:</span>
+                    <span>Mahasiswa UNEJ</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Lokasi:</span>
+                    <span>Batu-urip,Sumberbaru,Jember</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Keahlian:</span>
+                    <span>Desain Grafis, Coding</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Prestasi & Pencapaian</h3>
+            <ul class="achievement-list">
+                <li>Peraih medali emas,lomba Olimpiade bahasa arab</li>
+                <li>....</li>
+                <li>....</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Mari Terhubung</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/18WaVgxP5j/" class="btn fb">Facebook Profile</a>
+                <a href="https://www.tiktok.com/@farelahmadhidayahjbr?_r=1&_t=ZS-95bKUDEnvSm" class="btn tk">TikTok @farel</a>
+                <a href="https://wa.me/qr/6IUNLVHEYB4FJ1" class="btn wa">WhatsApp Chat</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
